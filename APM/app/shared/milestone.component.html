@@ -1,0 +1,23 @@
+<div *ngIf='Milestone' (click)='onClick()'>
+    <div>
+        {{Milestone ? Milestone.By : ''}}
+    </div>
+    <div *ngIf='!Milestone.Started'>
+        <small>
+            Assigned but not yet started
+        </small>
+    </div>
+    <div *ngIf='Milestone.Started && !Milestone.Completed'>
+        <small class='inProgress'>
+            Started {{Milestone.Started}}
+        </small>
+    </div>
+    <div *ngIf='Milestone.Completed'>
+        <small class='complete'>
+            Completed {{Milestone.Completed}}
+        </small>
+    </div>
+</div>
+<div *ngIf='!Milestone'>
+    <span class='awaiting'>Pending</span>
+</div>

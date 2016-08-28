@@ -68,12 +68,35 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\jobs\IJob.js" />
+    <Content Include="app\jobs\IMilestone.js" />
+    <Content Include="app\jobs\job-filter.pipe.js" />
+    <Content Include="app\jobs\job-list.component.css" />
+    <Content Include="app\jobs\job-list.component.html" />
+    <Content Include="app\jobs\job-list.component.js" />
+    <Content Include="app\jobs\job.service.js" />
+    <Content Include="app\products\product-list.component.html" />
+    <Content Include="app\products\product-list.component.js" />
+    <Content Include="app\shared\milestone.component.css" />
+    <Content Include="app\shared\milestone.component.html" />
+    <Content Include="app\shared\milestone.component.js" />
+    <Content Include="app\shared\star.component.css" />
+    <Content Include="app\shared\star.component.html" />
     <Content Include="packages.config" />
     <Content Include="api\products\products.json" />
     <Content Include="app\home\welcome.component.js.map" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="typings.json" />
+    <Content Include="api\jobs\jobs.json" />
+    <Content Include="app\jobs\IJob.js.map" />
+    <Content Include="app\jobs\IMilestone.js.map" />
+    <Content Include="app\jobs\job-filter.pipe.js.map" />
+    <Content Include="app\jobs\job-list.component.js.map" />
+    <Content Include="app\jobs\job.service.js.map" />
+    <Content Include="app\products\product-list.component.js.map" />
+    <Content Include="app\shared\milestone.component.js.map" />
+    <Content Include="readme.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -86,8 +109,6 @@
     <Content Include="app\assets\images\logo.jpg" />
     <Content Include="app\home\welcome.component.html" />
     <Content Include="app\home\welcome.component.js" />
-    <Content Include="app\shared\star.component.css" />
-    <Content Include="app\shared\star.component.html" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -97,7 +118,14 @@
   <ItemGroup>
     <TypeScriptCompile Include="app\app.component.ts" />
     <TypeScriptCompile Include="app\home\welcome.component.ts" />
+    <TypeScriptCompile Include="app\jobs\IJob.ts" />
+    <TypeScriptCompile Include="app\jobs\IMilestone.ts" />
+    <TypeScriptCompile Include="app\jobs\job-filter.pipe.ts" />
+    <TypeScriptCompile Include="app\jobs\job-list.component.ts" />
+    <TypeScriptCompile Include="app\jobs\job.service.ts" />
     <TypeScriptCompile Include="app\main.ts" />
+    <TypeScriptCompile Include="app\products\product-list.component.ts" />
+    <TypeScriptCompile Include="app\shared\milestone.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

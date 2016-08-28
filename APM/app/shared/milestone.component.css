@@ -1,0 +1,11 @@
+.awaiting {
+    color: lightgrey;
+}
+
+.inProgress {
+    color:#999900;
+}
+
+.complete {
+    color: green;
+}

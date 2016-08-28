@@ -1,0 +1,120 @@
+[
+    {
+        "Id": 1,
+        "Title": "HR System Changes",
+        "Spec": {
+            "By": "Colin Cook",
+            "Started": "2016-07-09",
+            "Completed": null
+        },
+        "Plan": null,
+        "Implemented": null,
+        "Test": null,
+        "PutLive": null
+    },
+    {
+        "Id": 2,
+        "Title": "MIS Changes",
+        "Spec": {
+            "By": "Barry Smith",
+            "Started": "2016-07-10",
+            "Completed": "2016-07-11"
+        },
+        "Plan": {
+            "By": "Derek Bum",
+            "Started": "2016-07-12",
+            "Completed": null
+        },
+        "Implemented": null,
+        "Test": null,
+        "PutLive": null
+    },
+    {
+        "Id": 3,
+        "Title": "System A Changes",
+        "Spec": {
+            "Started": "2016-07-12",
+            "Completed": "2016-07-13"
+        },
+        "Plan": {
+            "Started": "2016-07-13",
+            "Completed": "2016-07-14"
+        },
+        "Implemented": {
+            "Started": "2016-07-15",
+            "Completed": "2016-07-16"
+        },
+        "Test": null,
+        "PutLive": null
+    },
+    {
+        "Id": 4,
+        "Title": "System B Changes",
+        "Spec": {
+            "Started": "2016-07-17",
+            "Completed": "2016-07-18"
+        },
+        "Plan": {
+            "Started": "2016-07-18",
+            "Completed": "2016-07-19"
+        },
+        "Implemented": {
+            "Started": "2016-07-20",
+            "Completed": "2016-07-21"
+        },
+        "Test": {
+            "By": "Colin Cook",
+            "Started": "2016-07-22",
+            "Completed": "2016-07-23"
+        },
+        "PutLive": null
+    },
+    {
+        "Id": 5,
+        "Title": "System C Changes",
+        "Spec": {
+            "Started": "2016-07-24",
+            "Completed": "2016-07-25"
+        },
+        "Plan": {
+            "Started": "2016-07-26",
+            "Completed": "2016-07-27"
+        },
+        "Implemented": {
+            "Started": "2016-07-27",
+            "Completed": "2016-07-28"
+        },
+        "Test": {
+            "Started": "2016-07-29",
+            "Completed": "2016-08-01"
+        },
+        "PutLive": {
+            "Started": "2016-08-02",
+            "Completed": "2016-08-03"
+        }
+    },
+    {
+        "Id": 6,
+        "Title": "System D Changes",
+        "Spec": {
+            "Started": "2016-08-04",
+            "Completed": "2016-08-05"
+        },
+        "Plan": {
+            "Started": "2016-08-06",
+            "Completed": "2016-08-07"
+        },
+        "Implemented": {
+            "Started": "2016-08-08",
+            "Completed": "2016-08-09"
+        },
+        "Test": {
+            "Started": "2016-08-10",
+            "Completed": "2016-08-11"
+        },
+        "PutLive": {
+            "Started": "2016-08-12",
+            "Completed": "2016-08-13"
+        }
+    }                                       
+]

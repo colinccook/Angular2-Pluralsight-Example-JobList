@@ -1,0 +1,41 @@
+<div class='panel panel-primary'>
+
+    <div class='panel-heading'>
+        {{pageTitle}} {{filterType == 1 ? ' - Jobs in Progress' : filterType == 2 ? ' - Awaiting' : ' - All Jobs'}}
+        <span class='pull-right'>
+            <button (click)='filter(0);' class='btn btn-default'>View All Jobs</button>
+            <button (click)='filter(1);' class='btn btn-default'>Jobs in Progress</button>
+            <button (click)='filter(2);' class='btn btn-default'>Awaiting</button>
+        </span>
+    </div>
+
+    <div class='panel-body'>
+        <div class="table-responsive">
+        <table class="table table-bordered table-condensed" ng-if='jobs && jobs.lenth'>
+            <thead>
+                <tr>
+                    <th>Job Number</th>
+                    <th>Job Title</th>
+                    <th>Speccing</th>
+                    <th>Planning</th>
+                    <th>Implemented</th>
+                    <th>Testing</th>
+                    <th>Put Live</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor='#job of jobs | jobFilter:filterType' [title]='job.Id'>
+                    <td>{{job.Id}}</td>
+                    <td>{{job.Title}}</td>
+                    <td><nes-milestone [Milestone]='job.Spec' (milestoneClicked)='onMilestoneClicked($event)'></nes-milestone></td>
+                    <td><nes-milestone [Milestone]='job.Plan' (milestoneClicked)='onMilestoneClicked($event)'></nes-milestone></td>
+                    <td><nes-milestone [Milestone]='job.Implemented' (milestoneClicked)='onMilestoneClicked($event)'></nes-milestone></td>
+                    <td><nes-milestone [Milestone]='job.Test' (milestoneClicked)='onMilestoneClicked($event)'></nes-milestone></td>
+                    <td><nes-milestone [Milestone]='job.PutLive' (milestoneClicked)='onMilestoneClicked($event)'></nes-milestone></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+
+</div>
